@@ -29,7 +29,7 @@ const calendarDates = document.querySelector('.calendar__dates')
 const applyTheme = () => {
 	document.body.classList.add(`theme__${fullInfoObject.theme}`)
 
-	const basePath = '/img/themes'
+	const basePath = '/tarot-planner/img/themes'
 	const lowRes = `${basePath}/${fullInfoObject.theme}_mini.jpg`
 	const highRes = `${basePath}/${fullInfoObject.theme}.jpg`
 
