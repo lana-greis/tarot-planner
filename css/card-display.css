@@ -100,7 +100,8 @@
 
 .card-display__info_color_text,
 .card-display__info_text {
-	font-family: "Poiret One", sans-serif;
+	font-family: "M PLUS Rounded 1c", sans-serif;
+	letter-spacing: 1px;
 	font-size: 24px;
 }
 

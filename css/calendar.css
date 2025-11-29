@@ -1,6 +1,6 @@
 :root {
-  --day-size-w: 160px;
-  --day-size-h: 160px;
+  --day-size-w: 150px;
+  --day-size-h: 150px;
 }
 
 .calendar__wrapper {
@@ -26,7 +26,7 @@
 
 .calendar__dates {
 	display: flex;
-	gap: 20px 0;
+	gap: 30px;
 	justify-content: space-between;
 	flex-wrap: wrap;
 }
@@ -79,8 +79,12 @@
 
 @media (max-width: 1279px) {
 	:root {
-		--day-size-w: 130px;
-		--day-size-h: 130px;
+		--day-size-w: 120px;
+		--day-size-h: 120px;
+	}
+
+	.calendar__dates {
+		gap: 20px;
 	}
 
 	.calendar__days-name_day {
@@ -96,12 +100,12 @@
 
 @media (max-width: 1023px) {
 	:root {
-		--day-size-w: 95px;
-		--day-size-h: 95px;
+		--day-size-w: 85px;
+		--day-size-h: 85px;
 	}
 
 	.calendar__dates {
-		gap: 10px 0;
+		gap: 20px 10px;
 	}
 
 	.calendar__dates_cell__info{
@@ -117,8 +121,8 @@
 
 @media (max-width: 767px) {
 	:root {
-		--day-size-w: 72px;
-		--day-size-h: 72px;
+		--day-size-w: 62px;
+		--day-size-h: 62px;
 	}
 
 	.calendar__days-name_day {
@@ -138,17 +142,22 @@
 	.calendar__dates_cell__card {
 		border-radius: 5px;
 	}
+
+	.calendar__dates {
+		gap: 17px;
+	}
 }
 
 @media (max-width: 599px) {
 	.calendar__dates_cell {
 		padding-left: 60px;
-		width: 100%;
+		width: 90%;
+		margin: 0 auto;
 		min-height: 300px;
 	}
 
 	.calendar__dates {
-		gap: 20px 0;
+		gap: 30px;
 	}
 
 	.calendar__wrapper {
