@@ -334,7 +334,8 @@ const renderCalendar = (y, m) => {
 }
 
 const introWrapper = document.querySelector('.intro__wrapper')
-const introTitle = introWrapper.children[0].children[0]
+const introDateShow = introWrapper.children[0]
+const introTitle = introDateShow.children[0]
 const introCardWrapper = introWrapper.children[1]
 const introCardImage = introCardWrapper.children[1]
 const introCardName = introCardWrapper.children[2]
@@ -387,6 +388,19 @@ const changeHelloText = () => {
 	helloText.innerText = fullInfoObject.introText
 }
 
+const createYtLink = () => {
+	if (!fullInfoObject.ytLink || fullInfoObject.ytLink === '') return
+
+	const ytLinkBtn = document.createElement('button')
+	ytLinkBtn.classList.add('yt-link__btn')
+	ytLinkBtn.innerText = 'Смотреть видео'
+	ytLinkBtn.addEventListener('click', () => {
+		window.open(fullInfoObject.ytLink, '_blank')
+	})
+
+	introDateShow.append(ytLinkBtn)
+}
+
 const superStarTer = () => {
 	applyTheme()
 	renderCalendar(fullInfoObject.year, fullInfoObject.month)
@@ -394,6 +408,7 @@ const superStarTer = () => {
 	changeMonthCardImage()
 	changeMonthCardName()
 	changeHelloText()
+	createYtLink()
 }
 
 loadLayout()

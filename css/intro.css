@@ -46,6 +46,25 @@
 	border-radius: 20px;
 	}
 
+.yt-link__btn {
+	display: block;
+	margin: 20px auto 0;
+	padding: 10px 30px;
+	font-family: "Marck Script", cursive;
+	font-size: 24px;
+	color: #000;
+	background: #ffffff99;
+	border: 2px solid #ffffff;
+	border-radius: 20px;
+	transition: .2s;
+}
+
+.yt-link__btn:hover {
+	cursor: pointer;
+	transform: scale(1.04, 1.04);
+	background: #ffffffcc;
+}
+
 	.hello-text {
 		text-align: center;
 		font-family: "Poiret One", sans-serif;
@@ -57,6 +76,10 @@
 @media (max-width: 1023px) {
 	.intro__date-show_title {
 		font-size: 48px;
+	}
+
+	.yt-link__btn {
+		font-size: 18px;
 	}
 
 	.intro__month-info > * {
@@ -77,6 +100,11 @@
 		font-size: 36px;
 	}
 
+	.yt-link__btn {
+		font-size: 14px;
+		padding: 8px 24px;
+	}
+
 	.intro__month-info > * {
 		max-width: 150px;
 	}
@@ -94,6 +122,10 @@
 	.intro__wrapper {
 		flex-direction: column;
 		gap: 30px;
+	}
+
+	.yt-link__btn {
+		font-size: 20px;
 	}
 
 	.intro__wrapper > * {
