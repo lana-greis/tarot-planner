@@ -1,0 +1,195 @@
+body::after {
+	content: "";
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100vh;
+	height: 100lvh;
+	background: var(--bg-image) center/cover no-repeat;
+	z-index: -2;
+	opacity: 1;
+  transition: background-image 0s, opacity 0.4s ease-in-out;
+}
+
+body::before {
+	content: "";
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100vh;
+	height: 100lvh;
+	background: rgba(255, 255, 255, 0.486);
+	pointer-events: none;
+	z-index: -1;
+}
+
+.theme__cards-big .calendar__days-name_day {	
+	text-shadow: 0 0 3px hsl(0, 0%, 66%),
+							 0 0 5px hsl(0, 0%, 0%),
+							 0 0 4px hsla(0, 0%, 100%, 0.4),
+							 6px 6px 4px hsl(12, 66%, 58%),
+							-4px -6px 6px hsl(229, 65%, 56%),
+							 0 0 9px hsl(0, 42%, 46%);
+}
+
+.theme__cards-coffee .calendar__days-name_day {	
+	text-shadow: 0 0 3px hsl(0, 0%, 66%),
+							 0 0 5px hsl(0, 0%, 0%),
+							 0 0 4px hsla(0, 0%, 100%, 0.4),
+							 6px 6px 4px hsl(12, 66%, 58%),
+							-4px -6px 6px hsl(0, 14%, 21%),
+							 0 0 9px hsl(0, 42%, 46%);
+}
+
+.theme__cards-deck .calendar__days-name_day {	
+	text-shadow: 0 0 3px hsl(0, 0%, 66%),
+							 0 0 5px hsl(0, 0%, 0%),
+							 0 0 4px hsla(0, 0%, 100%, 0.4),
+							 6px 6px 4px hsl(12, 66%, 58%),
+							-4px -6px 6px hsl(56, 73%, 68%),
+							 0 0 9px hsl(0, 42%, 46%);
+}
+
+.theme__cards-table .calendar__days-name_day {	
+	text-shadow: 0 0 3px hsl(0, 0%, 66%),
+							 0 0 5px hsl(0, 0%, 0%),
+							 0 0 4px hsla(0, 0%, 100%, 0.4),
+							 6px 6px 4px hsl(36, 45%, 72%),
+							-4px -6px 6px hsl(335, 62%, 65%),
+							 0 0 9px hsl(0, 42%, 46%);
+}
+
+.theme__meditation .calendar__days-name_day {	
+	text-shadow: 0 0 3px hsl(0, 0%, 66%),
+							 0 0 5px hsl(0, 0%, 0%),
+							 0 0 4px hsla(0, 0%, 100%, 0.4),
+							 6px 6px 4px hsl(295, 66%, 58%),
+							-4px -6px 6px hsl(229, 65%, 56%),
+							 0 0 9px hsl(0, 42%, 46%);
+}
+
+.theme__meditation-blue .calendar__days-name_day {	
+	text-shadow: 0 0 3px hsl(0, 0%, 66%),
+							 0 0 5px hsl(0, 0%, 0%),
+							 0 0 4px hsla(0, 0%, 100%, 0.4),
+							 6px 6px 4px hsl(0, 0%, 100%),
+							-4px -6px 6px hsl(229, 65%, 56%),
+							 0 0 9px hsl(236, 51%, 59%);
+}
+
+.theme__cards-big .header {
+	--first-color: hsl(12, 66%, 58%);
+	--second-color: hsl(229, 65%, 56%);
+	--third-color: hsl(0, 42%, 46%);
+}
+
+.theme__cards-coffee .header {
+	--first-color: hsl(12, 66%, 58%);
+	--second-color: hsl(0, 14%, 21%);
+	--third-color: hsl(0, 42%, 46%);
+}
+
+.theme__cards-deck .header {
+	--first-color: hsl(12, 66%, 58%);
+	--second-color: hsl(56, 73%, 68%);
+	--third-color: hsl(0, 42%, 46%);
+}
+
+.theme__cards-table .header {
+	--first-color: hsl(36, 45%, 72%);
+	--second-color: hsl(335, 62%, 65%);
+	--third-color: hsl(0, 42%, 46%);
+}
+
+.theme__meditation .header {
+	--first-color: hsl(295, 66%, 58%);
+	--second-color: hsl(229, 65%, 56%);
+	--third-color: hsl(0, 42%, 46%);
+}
+
+.theme__meditation-blue .header {
+	--first-color: hsl(0, 0%, 100%);
+	--second-color: hsl(229, 65%, 56%);
+	--third-color: hsl(236, 51%, 59%);
+}
+
+@keyframes glow {
+	0% {
+		text-shadow: 0 0 3px hsl(0, 0%, 66%),
+		0 0 5px hsl(0, 0%, 0%),
+		0 0 4px hsla(0, 0%, 100%, 0.4),
+		0 0 5px var(--first-color), 
+		0 0 10px var(--first-color), 
+		0 0 20px var(--first-color), 
+		0 0 40px var(--first-color), 
+		0 0 80px var(--first-color);
+	}
+	50% {
+		text-shadow: 0 0 3px hsl(0, 0%, 66%),
+		0 0 5px hsl(0, 0%, 0%),
+		0 0 4px hsla(0, 0%, 100%, 0.4),
+		0 0 5px var(--second-color), 
+		0 0 10px var(--second-color), 
+		0 0 20px var(--second-color), 
+		0 0 40px var(--second-color), 
+		0 0 80px var(--second-color);
+	}
+	100% {
+		text-shadow: 0 0 3px hsl(0, 0%, 66%),
+		0 0 5px hsl(0, 0%, 0%),
+		0 0 4px hsla(0, 0%, 100%, 0.4),
+		0 0 5px var(--third-color), 
+		0 0 10px var(--third-color), 
+		0 0 20px var(--third-color), 
+		0 0 40px var(--third-color), 
+		0 0 80px var(--third-color);
+	}
+}
+
+.header__brand {
+	font-family: "Metal", serif;
+	font-size: 56px;
+	color: aliceblue;
+	white-space: nowrap;
+	text-shadow: 0 0 3px hsl(0, 0%, 66%),
+	0 0 5px hsl(0, 0%, 0%),
+	0 0 4px hsla(0, 0%, 100%, 0.4),
+	0 0 5px var(--first-color), 
+	0 0 10px var(--first-color), 
+	0 0 20px var(--first-color), 
+	0 0 40px var(--first-color), 
+	0 0 80px var(--first-color);
+	animation: glow 5s infinite alternate;
+}
+
+.theme__cards-big .intro__date-show_title {
+	background-color: hsl(347, 31%, 49%);
+}
+
+.theme__cards-coffee .intro__date-show_title {
+	background-color: hsl(0, 24%, 15%);
+}
+
+.theme__cards-deck .intro__date-show_title {
+	background-color: hsl(343, 32%, 17%);
+}
+
+.theme__cards-table .intro__date-show_title {
+	background-color: hsl(345, 44%, 15%);
+}
+
+.theme__meditation .intro__date-show_title {
+	background-color: hsl(347, 31%, 49%);
+}
+
+.theme__meditation-blue .intro__date-show_title {
+	background-color: hsl(266, 29%, 41%);
+}
+
+@media (max-width: 350px) {
+	.header__brand {
+		font-size: 48px;
+	}
+}
